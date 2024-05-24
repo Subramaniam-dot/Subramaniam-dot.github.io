@@ -1,0 +1,26 @@
+---
+title: ""
+format: html
+---
+
+# Neural Networks based Smart e-Health Application for the Prediction of Tuberculosis using Serverless Computing
+
+## Abstract
+
+The convergence of the Internet of Things (IoT) with e-health records is creating a new era of advancements in the diagnosis and treatment of disease, which is reshaping the modern landscape of healthcare. In this paper, we propose a neural networks-based smart e-health application for the prediction of Tuberculosis (TB) using serverless computing. The performance of various Convolution Neural Network (CNN) architectures using transfer learning is evaluated to prove that this technique holds promise for enhancing the capabilities of IoT and e-health systems in the future for predicting the manifestation of TB in the lungs. The work involves training, validating, and comparing Densenet-201, VGG-19, and Mobilenet-V3-Small architectures based on performance metrics such as test binary accuracy, test loss, intersection over union, precision, recall, and F1 score. The findings hint at the potential of integrating these advanced Machine Learning (ML) models within IoT and e-health frameworks, thereby paving the way for more comprehensive and data-driven approaches to enable smart healthcare. The best-performing model, VGG-19, is selected for different deployment strategies using server and serless-based environments. We used JMeter to measure the performance of the deployed model, including the average response rate, throughput, and error rate. This study provides valuable insights into the selection and deployment of ML models in healthcare, highlighting the advantages and challenges of different deployment options. Furthermore, it also allows future studies to integrate such models into IoT and e-health systems, which could enhance healthcare outcomes through more informed and timely treatments.
+
+Published in: IEEE Journal of Biomedical and Health Informatics (Early Access)  
+Page(s): 1 - 12  
+Date of Publication: 20 February 2024  
+ISSN Information:  
+PubMed ID: 38376974  
+DOI: [10.1109/JBHI.2024.3367736](https://doi.org/10.1109/JBHI.2024.3367736)  
+Publisher: IEEE  
+
+## Citation
+
+S. S. Murugesan, S. Velu, M. Golec, H. Wu and S. S. Gill, "Neural Networks based Smart e-Health Application for the Prediction of Tuberculosis using Serverless Computing," in IEEE Journal of Biomedical and Health Informatics, doi: 10.1109/JBHI.2024.3367736.
+
+**Keywords:** Biomedical imaging, X-ray imaging, Tuberculosis, Image recognition, Diseases, Computer architecture, Pneumonia, e-Health, Machine Learning, Serverless Computing, Predictive Models, Healthcare, IoT.
+
+

@@ -1,0 +1,14 @@
+---
+title: ""
+format: html
+---
+
+<div class="blog-summary">
+  <h2><a href="/posts/Blog1.qmd">The Democratization of AI: How GPUs and Parallel Computing Are Opening Doors for Everyone</a></h2>
+
+  <p><em>Posted on: 2024-03-16 | Estimated read time: 8 minutes</em></p>
+
+  <p>The landscape of artificial intelligence (AI) development is undergoing a profound transformation, driven by advancements in GPUs, parallel computing, and the increasing accessibility of AI technologies. This evolution is not just technical but also deeply democratic, lowering the barriers to entry for AI research and development. Let's delve into how these changes are reshaping the field of AI.</p>
+
+  <p><a href="/posts/Blog1.qmd">Read More</a></p>
+</div>

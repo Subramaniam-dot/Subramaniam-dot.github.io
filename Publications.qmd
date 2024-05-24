@@ -12,5 +12,5 @@ IEEE Journal of Biomedical and Health Informatics</p>
 <p>DOI: <a href="https://doi.org/10.1109/JBHI.2024.3367736">10.1109/JBHI.2024.3367736</a></p>
 
 
-  <p><a href="/posts/Blog1.qmd">Read More</a></p>
+  <p><a href="/posts/publications1.qmd">Read More</a></p>
 </div>

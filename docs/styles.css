@@ -6,10 +6,8 @@ body {
     background-color: #f4f4f4;
     padding: 20px;
     max-width: 960px;
-    /* Slightly wider for better readability */
     margin: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Soft shadow around the body for depth */
 }
 
 /* Enhanced typography and color scheme */
@@ -20,18 +18,13 @@ h4,
 h5,
 h6 {
     color: #003366;
-    /* A deeper shade for headings */
     font-weight: 300;
-    /* Lighter font weights for a modern look */
     text-transform: uppercase;
-    /* Uppercase for heading for added style */
     margin: 20px 0 10px;
-    /* Adjusted spacing */
 }
 
 h1 {
     font-size: 32px;
-    /* Larger for primary headings */
 }
 
 /* Abstract styling with a more polished look */
@@ -39,11 +32,9 @@ h1 {
     background-color: #e7f1ff;
     border-left: 5px solid #0056b3;
     padding: 20px;
-    /* More padding for a spacious look */
     margin: 20px 0;
     font-style: italic;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    /* Subtle shadow for depth */
 }
 
 /* Refined citation and metadata styling */
@@ -51,41 +42,28 @@ h1 {
 .metadata {
     background-color: #fff;
     border: 1px solid #ccc;
-    /* Lighter border */
     padding: 20px;
-    /* More padding for a spacious feel */
     margin: 20px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    /* Consistent subtle shadow */
     transition: all 0.3s ease;
-    /* Smooth transition for hover effects */
 }
 
 .citation:hover,
 .metadata:hover {
     transform: translateY(-2px);
-    /* Slight lift on hover for interactivity */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    /* Enhanced shadow on hover */
 }
 
 /* Keywords styling with enhancements for legibility */
 .keywords {
     background-color: #f0f8ff;
-    /* Lighter background for contrast */
     border-radius: 10px;
-    /* Rounder edges for a softer look */
     padding: 8px 15px;
-    /* Larger padding for better legibility */
     display: inline-block;
     margin: 5px 10px;
-    /* Adjusted spacing */
     font-size: 16px;
-    /* Slightly larger font size */
     color: #0056b3;
-    /* Color for keywords to stand out */
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow for depth */
 }
 
 /* Enhanced link styling for a more interactive feel */
@@ -93,14 +71,11 @@ a {
     color: #0056b3;
     text-decoration: none;
     transition: color 0.2s ease-in-out;
-    /* Smooth color transition */
 }
 
 a:hover {
     color: #003366;
-    /* Darker shade on hover for emphasis */
     text-decoration: underline;
-    /* Underline on hover for clarity */
 }
 
 /* Profile photo styling with refined border */
@@ -109,18 +84,14 @@ a:hover {
     height: auto;
     border-radius: 50%;
     border: 4px solid #0056b3;
-    /* Solid border color for emphasis */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Soft shadow for a 3D effect */
 }
 
 /* Ensure icons and other elements align nicely */
 i.fab,
 .fas {
     vertical-align: middle;
-    /* Aligns icons vertically with text */
     margin-right: 8px;
-    /* Standardized margin for spacing */
 }
 
 .blog-summary {
@@ -135,66 +106,47 @@ i.fab,
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-
-
 /* Add this to your styles.css */
 .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     max-width: 960px;
-    /* Match the body's max-width */
     margin: auto;
 }
 
 .main-content {
     flex: 3;
-    /* Takes up more space */
     margin-right: 20px;
-    /* Space between main content and recent posts */
 }
 
 .recent-posts-box {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /* Adds space between the links */
     padding: 10px;
-    /* Adds some padding inside the box */
     border-radius: 8px;
-    /* Rounds the corners */
     background-color: #f9f9f9;
-    /* Light background color for subtle emphasis */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow for depth */
     margin: 20px 0;
-    /* Adds space above and below the box */
     transition: background-color 0.3s ease;
-    /* Smooth transition for hover effect */
 }
 
 .recent-posts-box:hover {
     background-color: #f1f1f1;
-    /* Slightly darker background on hover */
 }
 
 .recent-posts-link {
     text-decoration: none;
-    /* Remove underline from links */
     color: #0073e6;
-    /* Blue color for links */
     font-weight: 500;
-    /* Slightly bolder font for links */
     transition: color 0.3s ease;
-    /* Smooth transition for hover effect */
 }
 
 .recent-posts-link:hover {
     color: #005bb5;
-    /* Darker blue on hover */
 }
 
 .recent-posts-link:visited {
     color: #551a8b;
-    /* Different color for visited links */
 }

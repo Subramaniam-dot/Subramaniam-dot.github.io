@@ -14,12 +14,16 @@ website:
         text: ResearchGate
 format:
   html:
-    theme: cosmo
+    theme: spacelab
     css: styles.css
     toc: true
     includes:
       in-header: |
-        <link rel='shortcut icon' type='image/x-icon' href='/images/favicon.ico'
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css'>
+        <link rel='shortcut icon' type='image/x-icon' href='/images/favicon.ico'>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+      before-body: |
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
 execute:
   enabled: true

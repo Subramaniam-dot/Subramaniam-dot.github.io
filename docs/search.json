@@ -1,24 +1,17 @@
 [
   {
-    "objectID": "Blog.html",
-    "href": "Blog.html",
-    "title": "Subramaniam Subramanian Murugesan",
-    "section": "",
-    "text": "The Democratization of AI: How GPUs and Parallel Computing Are Opening Doors for Everyone\n\n\nPosted on: 2024-03-16 | Estimated read time: 8 minutes\n\n\nThe landscape of artificial intelligence (AI) development is undergoing a profound transformation, driven by advancements in GPUs, parallel computing, and the increasing accessibility of AI technologies. This evolution is not just technical but also deeply democratic, lowering the barriers to entry for AI research and development. Let’s delve into how these changes are reshaping the field of AI.\n\n\nRead More"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "About Me",
     "section": "",
-    "text": "Hey there! I’m Subramaniam, or Subro to friends, currently navigating the intricate world of software engineering with a keen eye on AI and machine learning’s horizon. My adventure in tech began with an insatiable curiosity about how data can be transformed into smart decisions, leading me down a path filled with code, cloud, and countless learning moments.\nAfter wrapping up my MSc in Big Data Science from Queen Mary University of London—proudly with a distinction—I dove headfirst into the professional realm, eager to apply my academic insights to real-world puzzles.\nWhen I’m not coding or cloud-wrangling, I love demystifying AI and machine learning for anyone willing to listen. Whether through blog posts, discussions, or just casual chats over coffee, I’m all about sharing what I know and learning from others. After all, isn’t that how we all grow?\nIf you’re ever curious about AI, machine learning, or just want to exchange notes on the latest in tech, drop me a line at subramaniamsmurugesan@gmail.com. Let’s make AI not just a tool for the few, but a resource for the many. Who knows what we can achieve together?"
+    "text": "Hey there! I’m Subramaniam, or Subro to friends, navigating the intricate world of software engineering with a keen eye on AI and machine learning. My adventure in tech began with an insatiable curiosity about transforming data into smart decisions, leading me down a path filled with code, cloud, and countless learning moments.\nI am an incoming EPSRC Doctoral Training Partnership (DTP) PhD student in Electronic Engineering at Queen Mary University of London. My research focuses on RF emission detection, identification, and localisation, utilising Software-Defined Radio (SDR), advanced antennas, Cloud & IoT applications, AI/ML/DL applications, software engineering, and edge AI technologies. I have published my work in esteemed journals such as the IEEE Journal of Biomedical and Health Informatics (JBHI), Cluster Computing (Springer), and arXiv. As an experienced software engineer, I specialize in SQL, Python frameworks like Django and Flask, and machine learning frameworks such as TensorFlow and PyTorch. I have implemented numerous automations in AWS, including Lambda, SQS, RDS, Migrate, EKS, and EC2. I am passionate about democratizing AI and leveraging machine learning to solve real-world challenges.\nWhen I’m not coding or cloud-wrangling, I love demystifying AI and machine learning for anyone willing to listen. Whether through blog posts, discussions, or casual chats over coffee, I’m all about sharing knowledge and learning from others. After all, isn’t that how we all grow?\nIf you’re curious about AI, machine learning, or just want to exchange notes on the latest in tech, drop me a line at subramaniamsmurugesan@gmail.com. Let’s make AI not just a tool for the few, but a resource for the many. Who knows what we can achieve together?"
   },
   {
-    "objectID": "index.html#recent-posts",
-    "href": "index.html#recent-posts",
+    "objectID": "index.html#publications",
+    "href": "index.html#publications",
     "title": "About Me",
-    "section": "Recent Posts",
-    "text": "Recent Posts\n\nThe Democratization of AI: How GPUs and Parallel Computing Are Opening Doors for Everyone Neural Networks based Smart e-Health Application for the Prediction of Tuberculosis using Serverless Computing \n\nFollow me and let’s connect:\n  LinkedIn  |   GitHub  |   Twitter"
+    "section": "Publications",
+    "text": "Publications\n\nNeural Networks based Smart e-Health Application for the Prediction of Tuberculosis using Serverless Computing\n\n\nCloudAIBus: a testbed for AI based cloud computing environments\n\n\nEdge AI: A Taxonomy, Systematic Review and Future Directions\n\nFollow me and let’s connect:\n  LinkedIn  |   GitHub  |   Twitter"
   },
   {
     "objectID": "posts/publications1.html",
@@ -82,12 +75,5 @@
     "title": "The Democratization of AI: How GPUs and Parallel Computing Are Opening Doors for Everyone",
     "section": "References",
     "text": "References\n[1] H. Lin, P. Balaji, R. Poole, C. Sosa, X. Ma, and W. -c. Feng, “Massively parallel genomic sequence search on the Blue Gene/P architecture,” in SC ’08: Proceedings of the 2008 ACM/IEEE Conference on Supercomputing, Austin, TX, USA, 2008, pp. 1-11, doi: 10.1109/SC.2008.5222005.\n[2] S. W. Keckler, W. J. Dally, B. Khailany, M. Garland, and D. Glasco, “GPUs and the Future of Parallel Computing,” in IEEE Micro, vol. 31, no. 5, Sept.-Oct. 2011, pp. 7-17, doi: 10.1109/MM.2011.89.\n[3] S. Shariar and K. M. Azharul Hasan, “GPU Accelerated Indexing for High Order Tensors in Google Colab,” 2020 IEEE Region 10 Symposium (TENSYMP), Dhaka, Bangladesh, 2020, pp. 686-689, doi: 10.1109/TENSYMP50017.2020.9230789."
-  },
-  {
-    "objectID": "Publications.html",
-    "href": "Publications.html",
-    "title": "Subramaniam Subramanian Murugesan",
-    "section": "",
-    "text": "Neural Networks based Smart e-Health Application for the Prediction of Tuberculosis using Serverless Computing\n\n\nSS Murugesan, S Velu, M Golec, H Wu, SS Gill IEEE Journal of Biomedical and Health Informatics\n\n\nDOI: 10.1109/JBHI.2024.3367736\n\n\nRead More"
   }
 ]

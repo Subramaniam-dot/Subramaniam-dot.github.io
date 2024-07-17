@@ -40,27 +40,28 @@ format:
 
 
 
-Hey there! I'm Subramaniam, or Subro to friends, currently navigating the intricate world of software engineering with a keen eye on AI and machine learning's horizon. My adventure in tech began with an insatiable curiosity about how data can be transformed into smart decisions, leading me down a path filled with code, cloud, and countless learning moments.
+Hey there! I'm Subramaniam, or Subro to friends, navigating the intricate world of software engineering with a keen eye on AI and machine learning. My adventure in tech began with an insatiable curiosity about transforming data into smart decisions, leading me down a path filled with code, cloud, and countless learning moments.
 
-After wrapping up my MSc in Big Data Science from Queen Mary University of London—proudly with a distinction—I dove headfirst into the professional realm, eager to apply my academic insights to real-world puzzles.
+ I am an incoming EPSRC Doctoral Training Partnership (DTP) PhD student in Electronic Engineering at Queen Mary University of London. My research focuses on RF emission detection, identification, and localisation, utilising Software-Defined Radio (SDR), advanced antennas, Cloud & IoT applications, AI/ML/DL applications, software engineering, and edge AI technologies. I have published my work in esteemed journals such as the IEEE Journal of Biomedical and Health Informatics (JBHI), Cluster Computing (Springer), and arXiv. As an experienced software engineer, I specialize in SQL, Python frameworks like Django and Flask, and machine learning frameworks such as TensorFlow and PyTorch. I have implemented numerous automations in AWS, including Lambda, SQS, RDS, Migrate, EKS, and EC2. I am passionate about democratizing AI and leveraging machine learning to solve real-world challenges. 
 
+When I'm not coding or cloud-wrangling, I love demystifying AI and machine learning for anyone willing to listen. Whether through blog posts, discussions, or casual chats over coffee, I'm all about sharing knowledge and learning from others. After all, isn't that how we all grow?
 
-When I'm not coding or cloud-wrangling, I love demystifying AI and machine learning for anyone willing to listen. Whether through blog posts, discussions, or just casual chats over coffee, I'm all about sharing what I know and learning from others. After all, isn't that how we all grow?
-
-If you're ever curious about AI, machine learning, or just want to exchange notes on the latest in tech, drop me a line at <subramaniamsmurugesan@gmail.com>. Let's make AI not just a tool for the few, but a resource for the many. Who knows what we can achieve together?
+If you're curious about AI, machine learning, or just want to exchange notes on the latest in tech, drop me a line at subramaniamsmurugesan@gmail.com. Let's make AI not just a tool for the few, but a resource for the many. Who knows what we can achieve together?
 
 <!-- Recent Posts Section -->
 
 
 
-## Recent Posts
+##  Publications
 
 
 <div class="recent-posts-box">
-  <a href="/posts/Blog1.qmd" class="recent-posts-link">The Democratization of AI: How GPUs and Parallel Computing Are Opening Doors for Everyone</a>
-  <a href="/publications.html" class="recent-posts-link">Neural Networks based Smart e-Health Application for the Prediction of Tuberculosis using Serverless Computing</a>
-  <!-- Add more links as needed -->
-</div>
+  
+  <a href="https://ieeexplore.ieee.org/abstract/document/10440418" class="recent-posts-link">Neural Networks based Smart e-Health Application for the Prediction of Tuberculosis using Serverless Computing</a></div>
+  <div class="recent-posts-box">
+  <a href="https://link.springer.com/article/10.1007/s10586-024-04562-9" class="recent-posts-link">CloudAIBus: a testbed for AI based cloud computing environments</a></div>
+  <div class="recent-posts-box">
+  <a href="https://arxiv.org/abs/2407.04053" class="recent-posts-link">Edge AI: A Taxonomy, Systematic Review and Future Directions</a></div>
 
 
 Follow me and let's connect:

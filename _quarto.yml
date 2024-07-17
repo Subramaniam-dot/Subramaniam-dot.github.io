@@ -7,13 +7,11 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: About Me
-      - href: Publications.qmd
-        text: Publications
-      - href: Blog.qmd
-        text: Blog
-      
-
+        text: Home
+      - href: https://scholar.google.co.uk/citations?user=0vldbTgAAAAJ&hl=en
+        text: Google Scholar
+      - href: https://www.researchgate.net/profile/Subramaniam-Subramanian-Murugesan
+        text: ResearchGate
 format:
   html:
     theme: cosmo
@@ -21,8 +19,9 @@ format:
     toc: true
     includes:
       in-header: |
-        <link rel='shortcut icon' type='image/x-icon' href='/images/favicon.ico'>
+        <link rel='shortcut icon' type='image/x-icon' href='/images/favicon.ico'
 
-
-
-
+execute:
+  enabled: true
+  jupyter: true
+  kernel: python3

@@ -15,7 +15,7 @@ format:
 <img src="images/profile.png" alt="Subro" class="profile-photo" />
 
 Hi, I’m Subramaniam (or Subro).
-I’m a software engineer and incoming PhD student at Queen Mary University of London, funded by the EPSRC DTP. My research focuses on detecting and identifying RF signals using Software-Defined Radio (SDR), advanced antennas, and AI/ML technologies.
+I’m a PhD student at Queen Mary University of London, funded by the EPSRC DTP. My research focuses on detecting and identifying RF signals using Software-Defined Radio (SDR), advanced antennas, and AI/ML technologies.
 
 I work with Python (Django, Flask), SQL, and machine learning tools like TensorFlow and PyTorch. I also build cloud solutions using AWS services like Lambda, EC2, RDS, and more.
 

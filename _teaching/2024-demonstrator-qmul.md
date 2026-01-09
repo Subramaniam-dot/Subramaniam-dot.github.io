@@ -1,23 +1,22 @@
 ---
-title: "Demonstrator"
+title: "Demonstrator, Queen Mary University of London"
 collection: teaching
 type: "Undergraduate/Postgraduate courses"
 permalink: /teaching/2024-demonstrator-qmul
-venue: "Queen Mary University of London, School of Electronic Engineering and Computer Science"
+venue: "School of Electronic Engineering and Computer Science"
 date: 2024-09-01
 location: "London, UK"
+excerpt: "Lab demonstrator for Semi-Structured Data Engineering, Communication Systems, Security Engineering, and Data Mining modules."
 ---
 
-Demonstrator for the following modules:
-
 **ECS671U - Semi-Structured Data Engineering**
-Processing and querying semi-structured data using XML, XSLT, XQuery, and RDF. Covers data modelling and knowledge representation concepts beyond syntactic issues.
+Processing and querying semi-structured data using XML, XSLT, XQuery, and RDF. Covers data modelling and knowledge representation.
 
 **ECS528U - Communication Systems**
-Introduction to communication system models, noise effects, switching networks, PCM, and voice over packet. Covers information theory, entropy, binary symmetric channels, and coding for compression and error correction.
+Communication system models, noise effects, information theory, entropy, and coding for compression and error correction.
 
 **ECS655U - Security Engineering**
-Cyber security fundamentals including security requirements, practices, technologies, and policies. Covers applied cryptography (symmetric and public key encryption), reliability engineering, and safety engineering with hands-on labs for vulnerability mitigation.
+Cyber security fundamentals, applied cryptography, reliability and safety engineering with hands-on vulnerability mitigation labs.
 
 **ECS607U - Data Mining**
-Practical exploration of data mining techniques and algorithms. Covers pattern recognition, classification, clustering, and association rule mining with emphasis on algorithmic limitations and real-world applications.
+Data mining techniques including classification, clustering, and association rule mining with focus on algorithms and applications.

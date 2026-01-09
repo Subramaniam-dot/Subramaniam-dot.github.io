@@ -7,7 +7,6 @@ excerpt: 'An anchor-aware flow matching approach to improve RF localization robu
 date: 2026-03-01
 venue: 'European Conference on Antennas and Propagation (EuCAP 2026) [Accepted]'
 location: "Dublin, Ireland"
-citation: 'SS Murugesan, MQ Satti, KY Kapusuz, MA Thaha, A Alomainy. "Machine Learning-Based Anchor-Aware Conditional Flow Matching for RF Localization in Wireless Capsule Endoscopy," European Conference on Antennas and Propagation (EuCAP), Dublin, Ireland, 2026.'
 ---
 
 Reliable RF localization for capsule endoscopy remains challenging due to complex in-body propagation and measurement uncertainty. In this work, we explore an anchor-aware flow matching approach to improve localization robustness while staying consistent with the anchor geometry and measurements.

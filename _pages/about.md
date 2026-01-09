@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student in Electronic Engineering at Queen Mary University of London, funded by the EPSRC DTP. I work within the [Antennas and Electromagnetics Research Group](https://www.antennas.eecs.qmul.ac.uk/) under the supervision of Dr. Akram Alomainy and Dr. Mohamed Adhnan Thaha.
+I am a PhD student in Electronic Engineering at Queen Mary University of London, funded by the [EPSRC DTP](https://gtr.ukri.org/projects?ref=studentship-2923151). I work within the [Antennas and Electromagnetics Research Group](https://www.antennas.eecs.qmul.ac.uk/) under the supervision of Dr. Akram Alomainy and Dr. Mohamed Adhnan Thaha.
 
 ## Research
 

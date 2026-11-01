@@ -1,0 +1,10 @@
+{%- assign _pub = include.pub -%}
+{% include base_path %}
+<span class="pub__links">
+  {%- if include.abstract -%}<a href="{{ base_path }}{{ _pub.url }}">Abstract</a>{%- endif -%}
+  {%- if _pub.doi -%}<a href="https://doi.org/{{ _pub.doi }}">DOI</a>{%- elsif _pub.paperurl -%}<a href="{{ _pub.paperurl }}">Paper</a>{%- endif -%}
+  {%- if _pub.pdfurl -%}<a href="{{ _pub.pdfurl }}">PDF</a>{%- endif -%}
+  {%- if _pub.codeurl -%}<a href="{{ _pub.codeurl }}">Code</a>{%- endif -%}
+  {%- if _pub.slidesurl -%}<a href="{{ _pub.slidesurl }}">Slides</a>{%- endif -%}
+  {%- if _pub.bibtex and include.bibtex -%}<a href="{{ base_path }}{{ _pub.url }}#bibtex">BibTeX</a>{%- endif -%}
+</span>

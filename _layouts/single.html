@@ -34,7 +34,11 @@ layout: default
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
         {% endif %}
         
-        {% if page.collection == 'teaching' %}
+        {% if page.collection == 'publications' %}
+          <p class="pub-detail__authors">{% include pub-authors.html pub=page %}</p>
+          <p class="pub-detail__venue">{% include pub-venue.html pub=page %}</p>
+          {% if page.doi %}<p class="pub-detail__doi">DOI: <a href="https://doi.org/{{ page.doi }}">{{ page.doi }}</a></p>{% endif %}
+        {% elsif page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.venue and page.date %}
           <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
@@ -45,6 +49,18 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text">
+        {% if page.collection == 'publications' %}
+        <h2 class="pub-detail__heading">Abstract</h2>
+        <div class="pub-detail__abstract">
+        {{ content }}
+        </div>
+        {% if page.keywords %}<p class="pub-detail__keywords"><span class="pub-detail__label">Keywords:</span> {{ page.keywords | join: "; " }}</p>{% endif %}
+        <p class="pub-detail__links">{% include pub-links.html pub=page %}</p>
+        {% if page.bibtex %}
+        <h2 class="pub-detail__heading" id="bibtex">Cite this work</h2>
+        <pre class="pub-detail__bibtex"><code>{{ page.bibtex | strip | escape }}</code></pre>
+        {% endif %}
+        {% else %}
         {{ content }}
 
         {% if page.citation and page.paperurl and page.slidesurl and page.bibtexurl %}
@@ -71,6 +87,8 @@ layout: default
           <p style="font-size: smaller"><a href="{{ page.slidesurl }}">Download Slides</a></p>
         {% elsif page.bibtexurl %}
           <p style="font-size: smaller"><a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
+        {% endif %}
+
         {% endif %}
 
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}

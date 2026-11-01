@@ -8,5 +8,9 @@ author_profile: true
 {% include base_path %}
 
 {% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+<section class="teaching">
+  <h2 class="teaching__role">{{ post.title }}</h2>
+  <p class="teaching__meta">{{ post.venue }} · {{ post.location }} · {{ post.date | date: "%Y" }}–present</p>
+  {{ post.content }}
+</section>
 {% endfor %}

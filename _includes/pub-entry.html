@@ -1,0 +1,15 @@
+{%- comment -%}
+  One reference in a numbered publication list.
+  Usage: {% include pub-entry.html pub=post label="J3" %}
+{%- endcomment -%}
+{%- assign _pub = include.pub -%}
+{% include base_path %}
+<li class="pub" id="{{ include.label | default: _pub.slug }}">
+  {%- if include.label -%}<span class="pub__label">[{{ include.label }}]</span>{%- endif -%}
+  <div class="pub__body">
+    <span class="pub__authors">{% include pub-authors.html pub=_pub %}</span>,
+    &ldquo;<a class="pub__title" href="{{ base_path }}{{ _pub.url }}">{{ _pub.title }}</a>,&rdquo;
+    <span class="pub__venue">{% include pub-venue.html pub=_pub %}</span>
+    {% include pub-links.html pub=_pub abstract=true bibtex=true %}
+  </div>
+</li>

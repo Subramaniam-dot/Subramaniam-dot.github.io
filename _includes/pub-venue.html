@@ -1,0 +1,9 @@
+{%- comment -%} Venue line: "Journal, vol. 28, no. 9, pp. 5765–5776, 2024." {%- endcomment -%}
+{%- assign _pub = include.pub -%}
+<em>{{ _pub.venue }}</em>
+{%- if _pub.volume -%}, vol.&nbsp;{{ _pub.volume }}{%- endif -%}
+{%- if _pub.issue -%}, no.&nbsp;{{ _pub.issue }}{%- endif -%}
+{%- if _pub.pages -%}{%- if _pub.pages contains "–" -%}, pp.&nbsp;{{ _pub.pages }}{%- else -%}, Art.&nbsp;no.&nbsp;{{ _pub.pages }}{%- endif -%}{%- endif -%}
+{%- if _pub.location -%}, {{ _pub.location }}{%- endif -%}
+, {{ _pub.date | date: "%Y" }}.
+{%- if _pub.note %} <span class="pub__note">{{ _pub.note }}</span>{%- endif -%}

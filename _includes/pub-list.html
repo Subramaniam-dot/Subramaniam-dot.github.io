@@ -1,0 +1,27 @@
+{%- comment -%}
+  Publications grouped by category and numbered in reverse chronological order.
+  Usage: {% include pub-list.html %}            (all publications)
+         {% include pub-list.html selected=true %} (only those with `selected: true`, no headings)
+{%- endcomment -%}
+{%- if include.selected -%}
+  {%- assign _sel = site.publications | where: "selected", true | sort: "date" | reverse -%}
+  <ol class="pubs pubs--plain">
+  {%- for post in _sel -%}
+    {% include pub-entry.html pub=post %}
+  {%- endfor -%}
+  </ol>
+{%- else -%}
+  {%- for category in site.publication_category -%}
+    {%- assign _items = site.publications | where: "category", category[0] | sort: "date" | reverse -%}
+    {%- if _items.size > 0 -%}
+      <h2 class="pubs__heading" id="{{ category[0] }}">{{ category[1].title }}</h2>
+      <ol class="pubs">
+      {%- for post in _items -%}
+        {%- assign _num = _items.size | minus: forloop.index0 -%}
+        {% capture _label %}{{ category[1].prefix }}{{ _num }}{% endcapture %}
+        {% include pub-entry.html pub=post label=_label %}
+      {%- endfor -%}
+      </ol>
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}

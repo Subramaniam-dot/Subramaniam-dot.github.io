@@ -12,8 +12,8 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Subramaniam Murugesan"
 title_separator          : "-"
 name                     : &name "Subramaniam Murugesan"
-description              : &description "PhD Student at Queen Mary University of London - RF Signals, SDR, and AI/ML"
-url                      : https://Subramaniam-dot.github.io
+description              : &description "Subramaniam Murugesan, PhD researcher in Electronic Engineering at Queen Mary University of London, working on machine learning for RF localisation in wireless capsule endoscopy."
+url                      : https://subramaniammurugesan.com
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Subramaniam-dot/Subramaniam-dot.github.io"
 
@@ -24,8 +24,9 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Subramaniam Murugesan"
+  cite_name        : "S. S. Murugesan" # how your name appears in author lists; it is set in bold
   pronouns         : # example: "she/her"
-  bio              : "PhD Student in Electronic Engineering developing AI-driven RF localisation for wireless capsule endoscopy"
+  bio              : "PhD Researcher, Electronic Engineering<br>Antennas &amp; Electromagnetics Research Group"
   location         : "London, UK"
   employer         : "Queen Mary University of London"
   uri              : # URL
@@ -82,13 +83,20 @@ author:
   zhihu            : # Username
 
 # Publication Category - The following the list of publication categories and their headings
+# Each category gets a numbering prefix, e.g. [J3], [C1], [P1].
 publication_category:
-  books:
-    title: 'Books'
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Journal Articles'
+    prefix: 'J'
   conferences:
     title: 'Conference Papers'
+    prefix: 'C'
+  preprints:
+    title: 'Preprints'
+    prefix: 'P'
+  books:
+    title: 'Books and Book Chapters'
+    prefix: 'B'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
@@ -261,7 +269,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
       comments: true
   # _publications
   - scope:
@@ -270,7 +278,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
       comments: true
   # _portfolio
   - scope:
@@ -279,7 +287,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
       comment: true
   # _talks
   - scope:

@@ -1,0 +1,17 @@
+{%- comment -%}
+  Renders an IEEE-style author list ("A, B, and C") with the site owner in bold.
+  Usage: {% include pub-authors.html pub=post %}
+{%- endcomment -%}
+{%- assign _pub = include.pub -%}
+{%- assign _me = site.author.cite_name | default: site.author.name -%}
+{%- assign _n = _pub.authors | size -%}
+{%- for a in _pub.authors -%}
+  {%- if a == _me -%}<span class="pub__me">{{ a }}</span>{%- else -%}{{ a }}{%- endif -%}
+  {%- if _pub.authors_etal -%}
+    {%- if forloop.last -%}, et al.{%- else -%}, {% endif -%}
+  {%- else -%}
+    {%- unless forloop.last -%}
+      {%- if _n == 2 -%} and {% elsif forloop.rindex == 2 -%}, and {% else -%}, {% endif -%}
+    {%- endunless -%}
+  {%- endif -%}
+{%- endfor -%}

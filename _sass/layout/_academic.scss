@@ -1,0 +1,375 @@
+/* ==========================================================================
+   ACADEMIC STYLE LAYER
+   Serif typography, a restrained Oxford-navy palette, numbered references
+   and a print-friendly CV. Loaded last so it overrides the base template.
+   ========================================================================== */
+
+$acad-serif : "Source Serif 4", "Source Serif Pro", Georgia, "Times New Roman", serif;
+$acad-sans  : "Source Sans 3", "Source Sans Pro", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+
+:root {
+  --global-base-color          : #002147;
+  --global-bg-color            : #fdfdfb;
+  --global-footer-bg-color     : #fdfdfb;
+  --global-border-color        : #e2e0da;
+  --global-dark-border-color   : #c9c6bd;
+  --global-text-color          : #1b1b1b;
+  --global-text-color-light    : #5c5c5c;
+  --global-link-color          : #0b3d91;
+  --global-link-color-hover    : #002147;
+  --global-link-color-visited  : #4b2e83;
+  --global-masthead-link-color : #1b1b1b;
+  --global-masthead-link-color-hover : #0b3d91;
+  --global-code-background-color : #f4f3ef;
+  --global-code-text-color     : #1b1b1b;
+  --acad-accent                : #8c1d18;   /* used sparingly: labels, notes */
+  --acad-muted                 : #6b6b6b;
+}
+
+html[data-theme="dark"] {
+  --global-base-color          : #9cb8e8;
+  --global-bg-color            : #15171c;
+  --global-footer-bg-color     : #15171c;
+  --global-border-color        : #2c3038;
+  --global-dark-border-color   : #3a3f49;
+  --global-text-color          : #e4e2dc;
+  --global-text-color-light    : #a9a7a1;
+  --global-link-color          : #9cb8e8;
+  --global-link-color-hover    : #c7d7f3;
+  --global-link-color-visited  : #c0a8e6;
+  --global-masthead-link-color : #e4e2dc;
+  --global-masthead-link-color-hover : #9cb8e8;
+  --global-code-background-color : #1e2128;
+  --global-code-text-color     : #e4e2dc;
+  --acad-accent                : #e39a92;
+  --acad-muted                 : #a9a7a1;
+}
+
+/* ---- Typography --------------------------------------------------------- */
+
+html { font-size: 17px; }
+@media (min-width: 1280px) { html { font-size: 18px; } }
+
+body {
+  font-family: $acad-serif;
+  background-color: var(--global-bg-color);
+  color: var(--global-text-color);
+  font-feature-settings: "kern", "liga", "onum";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6,
+.page__title, .archive__item-title, .author__name {
+  font-family: $acad-serif;
+  color: var(--global-text-color);
+  letter-spacing: 0;
+}
+
+.page__title {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 0.4em;
+}
+
+.page__content,
+.archive {
+  line-height: 1.62;
+
+  p, li, dd { font-size: 1rem; }
+
+  h2 {
+    font-variant: small-caps;
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: 0.04em;
+    text-transform: lowercase;      /* true small caps for the whole word */
+    border-bottom: 1px solid var(--global-border-color);
+    padding-bottom: 0.2em;
+    margin: 2em 0 0.8em;
+  }
+
+  h3 {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin: 1.4em 0 0.5em;
+  }
+
+  a { text-decoration: none; border-bottom: 1px solid transparent; }
+  a:hover { border-bottom-color: currentColor; }
+}
+
+/* Lead block under the page title on the home page */
+.lead {
+  font-family: $acad-sans;
+  font-size: 0.95rem !important;
+  color: var(--acad-muted);
+  line-height: 1.5;
+  margin-bottom: 1.6em;
+}
+
+/* ---- Masthead ----------------------------------------------------------- */
+
+.masthead {
+  background: var(--global-bg-color);
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.greedy-nav {
+  background: var(--global-bg-color);
+  font-family: $acad-sans;
+
+  a { color: var(--global-masthead-link-color); }
+  a:hover { color: var(--global-masthead-link-color-hover); }
+
+  .visible-links a:before { background: var(--global-base-color); height: 2px; }
+
+  .masthead__menu-item {
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+  }
+
+  .masthead__menu-item--lg a {
+    font-family: $acad-serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+
+  button { background-color: var(--global-base-color); }
+}
+
+/* ---- Sidebar ------------------------------------------------------------ */
+
+.author__avatar img {
+  border-radius: 2px;
+  border: 1px solid var(--global-border-color);
+  padding: 3px;
+  background: var(--global-bg-color);
+}
+
+.author__name,
+.sidebar .author__name { font-family: $acad-serif; font-weight: 600; }
+
+.author__bio {
+  font-family: $acad-sans;
+  font-size: 0.82rem;
+  color: var(--acad-muted);
+  line-height: 1.45;
+}
+
+.author__urls {
+  font-family: $acad-sans;
+  font-size: 0.82rem;
+}
+
+/* ---- Publication lists -------------------------------------------------- */
+
+.pubs__intro {
+  font-family: $acad-sans;
+  font-size: 0.9rem !important;
+  color: var(--acad-muted);
+}
+
+ol.pubs {
+  list-style: none;
+  margin: 0 0 1.5em;
+  padding: 0;
+}
+
+.pub {
+  display: flex;
+  gap: 0.9em;
+  margin: 0 0 1em;
+  line-height: 1.5;
+}
+
+.pub__label {
+  flex: 0 0 2.6em;
+  font-family: $acad-sans;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--acad-muted);
+  padding-top: 0.12em;
+  font-variant-numeric: tabular-nums;
+}
+
+.pubs--plain .pub { gap: 0.6em; }
+.pubs--plain .pub::before { content: "\2013"; flex: 0 0 0.8em; color: var(--acad-muted); }
+
+.pub__body { flex: 1 1 auto; min-width: 0; }
+
+.pub__me { font-weight: 700; }
+
+.pub__title { color: var(--global-text-color) !important; font-weight: 600; }
+.pub__title:hover { color: var(--global-link-color) !important; }
+
+.pub__note {
+  font-family: $acad-sans;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--acad-accent);
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  padding: 0 0.35em;
+  margin-left: 0.25em;
+  white-space: nowrap;
+}
+
+.pub__links {
+  display: block;
+  margin-top: 0.15em;
+  font-family: $acad-sans;
+  font-size: 0.78rem;
+
+  a {
+    display: inline-block;
+    margin-right: 0.35em;
+    padding: 0 0.45em;
+    border: 1px solid var(--global-dark-border-color) !important;
+    border-radius: 2px;
+    color: var(--global-link-color);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+  }
+
+  a:hover { background: var(--global-link-color); color: var(--global-bg-color) !important; }
+}
+
+.more { font-family: $acad-sans; font-size: 0.88rem !important; }
+
+/* ---- Single publication page ------------------------------------------- */
+
+.pub-detail__authors { font-size: 1.02rem; margin: 0 0 0.2em; }
+.pub-detail__venue   { margin: 0 0 0.2em; }
+.pub-detail__doi     { font-family: $acad-sans; font-size: 0.85rem; color: var(--acad-muted); }
+
+.pub-detail__abstract p { text-align: justify; }
+
+.pub-detail__keywords { font-size: 0.92rem !important; }
+.pub-detail__label    { font-variant: small-caps; font-weight: 600; text-transform: lowercase; letter-spacing: 0.04em; }
+
+.pub-detail__bibtex {
+  font-size: 0.78rem;
+  line-height: 1.45;
+  background: var(--global-code-background-color);
+  border: 1px solid var(--global-border-color);
+  border-radius: 2px;
+  padding: 0.9em 1em;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+/* ---- Home page blocks --------------------------------------------------- */
+
+ul.interests {
+  columns: 2;
+  column-gap: 2em;
+  padding-left: 1.1em;
+  li { break-inside: avoid; margin-bottom: 0.15em; }
+  @media (max-width: 600px) { columns: 1; }
+}
+
+dl.news, dl.modules {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 1.2em;
+  row-gap: 0.5em;
+  margin: 0;
+
+  dt {
+    font-family: $acad-sans;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--acad-muted);
+    padding-top: 0.15em;
+    white-space: nowrap;
+  }
+  dd { margin: 0; font-family: $acad-serif; }
+}
+
+dl.modules {
+  grid-template-columns: 1fr;
+  dt { color: var(--global-text-color); font-family: $acad-serif; font-size: 1rem; padding-top: 0.6em; }
+}
+
+@media (max-width: 600px) {
+  dl.news { grid-template-columns: 1fr; dt { padding-top: 0.6em; } }
+}
+
+address.contact { font-style: normal; line-height: 1.55; }
+
+/* ---- Teaching ----------------------------------------------------------- */
+
+.teaching__role {
+  font-variant: normal !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+  font-size: 1.15rem !important;
+}
+.teaching__meta { font-family: $acad-sans; font-size: 0.88rem !important; color: var(--acad-muted); }
+
+/* ---- CV ----------------------------------------------------------------- */
+
+.cv__updated { font-family: $acad-sans; font-size: 0.82rem !important; color: var(--acad-muted); }
+
+.cv__entry {
+  display: grid;
+  grid-template-columns: 7.5em 1fr;
+  column-gap: 1.2em;
+  margin-bottom: 0.9em;
+  line-height: 1.5;
+  @media (max-width: 600px) { grid-template-columns: 1fr; }
+}
+
+.cv__when {
+  font-family: $acad-sans;
+  font-size: 0.85rem;
+  color: var(--acad-muted);
+  padding-top: 0.12em;
+  font-variant-numeric: tabular-nums;
+}
+
+.cv .pubs__heading {
+  font-variant: normal;
+  text-transform: none;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.05rem;
+  border: 0;
+  margin: 1em 0 0.5em;
+}
+
+table.cv__skills {
+  display: table;
+  border: 0;
+  font-family: $acad-serif;
+  font-size: 0.95rem;
+  th, td { border: 0; padding: 0.25em 0.8em 0.25em 0; vertical-align: top; background: none; }
+  th { text-align: left; white-space: nowrap; font-weight: 600; width: 10em; }
+}
+
+/* ---- Footer ------------------------------------------------------------- */
+
+.page__footer {
+  border-top: 1px solid var(--global-border-color);
+  font-family: $acad-sans;
+  font-size: 0.8rem;
+}
+
+/* ---- Print (CV and publication pages print cleanly) --------------------- */
+
+@media print {
+  html { font-size: 11pt; }
+  .masthead, .sidebar, .page__footer, .page__share, .pub__links, #theme-toggle { display: none !important; }
+  #main, .page, .archive { width: 100% !important; margin: 0 !important; padding: 0 !important; float: none !important; }
+  a { color: inherit !important; border: 0 !important; }
+  .page__content h2, .archive h2 { break-after: avoid; }
+  .pub, .cv__entry { break-inside: avoid; }
+}
